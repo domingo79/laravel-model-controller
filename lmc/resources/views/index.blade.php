@@ -18,10 +18,14 @@
 <body>
 
     @foreach($movies as $movie)
-    <h2>{{$movie->title}}</h2>
-
+    <h2>Title: {{$movie->title}}</h2>
+    <h3>Original Title: {{$movie->original_title}}</h3>
+    <ul>
+        <li>Nazionality: {{$movie->nationality}}</li>
+        <li>Released on: {{$movie->date}}</li>
+        <li>Vote: {{$movie->vote}}</li>
+    </ul>
     @endforeach
-
 </body>
 
 </html>
